@@ -1,2 +1,2 @@
-# personal-website
-My personal portfolio website detailing my passions, projects, specialties, etc.
+# My Personal Website
+This is my personal portfolio website detailing my passions, projects, specialties, etc.
