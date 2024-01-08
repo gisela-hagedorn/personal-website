@@ -1,0 +1,51 @@
+/*************************************************/
+body {
+    padding-inline: 5%;
+}
+
+.basic-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center-vertical {
+    margin: auto;
+    width: 50%;
+}
+
+h1 {
+    font-size: 4vw;
+    font-family: Poppins;
+    line-height: 30px;
+}
+
+h2 {
+    font-size: 3.6vw;
+}
+
+h3 {
+    font-size: 3.1vw;
+    font-weight: normal;
+}
+
+h2, h3, p {
+    font-family: Bitter;
+}
+
+
+/**HERO***********************************************/
+#profile_img {
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    box-shadow: 10px 5px 5px rgb(252,183,194);
+}
+
+.icons {
+    width: 9%;
+    height: 9%;
+}
+
+a:not(:first-child):not(:last-child) {
+    padding-inline: 10%;
+}
