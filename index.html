@@ -3,6 +3,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gisela Hagedorn</title>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter">
@@ -10,13 +12,29 @@
     </head>
     <body>
         <!--*HEADER*-------------------------------------------------------------------->
-        <header>
-
+        <header class="sticky">
+            <nav class="navbar">
+                <!-- LOGO -->
+                <div class="logo">
+                    <a href="#"><img src="images/logo_image.png" alt="My logo" class="logo-img"></a>
+                </div>
+            
+                <!-- NAVIGATION MENU -->
+                <ul class="nav-links">
+                  <!-- NAVIGATION MENUS -->
+                  <div class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </div>
+                </ul>
+              </nav>
         </header>
         <!--*MAIN*-------------------------------------------------------------------->
         <main>
             <!--*HERO*-------------------------------------------------------------------->
-            <section>
+            <section id="hero">
                 <div class="basic-container">
                     <div class="center-vertical">
                         <h3>Hi! Nice to see you.</h3>
@@ -34,7 +52,7 @@
                 </div>
             </section>
             <!--*ABOUT*-------------------------------------------------------------------->
-            <section>
+            <section id="about">
                 <h2 class="section-title">About Me</h2>
                 <div class="basic-container" id="about_container">
                     <div>
@@ -55,7 +73,7 @@
                 </div>
             </section>
             <!--*PROJECTS*-------------------------------------------------------------------->
-            <section>
+            <section id="projects">
                 <h2 class="section-title">Projects</h2>
                 <!--PROJECT 1: Planti-ful Home-->
                 <div class="basic-container project">
@@ -150,7 +168,7 @@
                 </div>
             </section>
             <!--*CONTACT*-------------------------------------------------------------------->
-            <section>
+            <section id="contact">
                 <h2>Contact</h2>
                 <div class="basic-container">
                     <p id="contact_txt">Hey again &#128075;, let's have a chat!</p>
