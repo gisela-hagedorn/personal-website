@@ -37,7 +37,9 @@
             <section>
                 <h2 class="section-title">About Me</h2>
                 <div class="basic-container" id="about_container">
-                    <img src="images/no_image.png" alt="No Image">
+                    <div>
+                        <img src="images/no_image.png" alt="No Image">
+                    </div>
                     <p id="about_txt">
                         I’m Gisela Hagedorn, an aspiring Software Developer. 
                         I recently graduate Purdue University with a B.S. is Computer and Information Technology.
@@ -150,11 +152,30 @@
             <!--*CONTACT*-------------------------------------------------------------------->
             <section>
                 <h2>Contact</h2>
+                <div class="basic-container">
+                    <p id="contact_txt">Hey again &#128075;, let's have a chat!</p>
+                    <div id="contact_form" class="container">
+                        <form action="action_page.php">
+                      
+                          <label for="fname">First Name</label>
+                          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      
+                          <label for="lname">Last Name</label>
+                          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      
+                          <label for="subject">Subject</label>
+                          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                      
+                          <input type="submit" value="Submit">
+                      
+                        </form>
+                      </div>
+                </div>
             </section>
         </main>
         <!--*FOOTER*-------------------------------------------------------------------->
         <footer>
-
+           
         </footer>
         <script src="javascript/script.js"></script>
     </body>
