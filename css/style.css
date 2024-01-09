@@ -67,6 +67,7 @@ button {
     border-style: none;
     font-family: Poppins;
     transition: all 0.5s;
+    text-decoration: none;
 }
 
 .learn-btn span {
@@ -230,6 +231,7 @@ li {
     .hamburger {
         display: flex;
         cursor: pointer;
+        font-size: 25px;
     }
     
     .hamburger #closeHam {
