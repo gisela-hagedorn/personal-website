@@ -444,6 +444,17 @@ li {
     margin-top: 25px;
 }
 
+.more-icons {
+    text-align: center;
+}
+
+.m-icons {
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    margin-inline: 5.5vw;
+}
+
 @media screen and (max-width: 1115px) {
     .project {
         margin-bottom: 80px;
