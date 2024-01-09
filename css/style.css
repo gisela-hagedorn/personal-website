@@ -1,15 +1,13 @@
 /*************************************************/
-html {
+body, html {
     padding: 0;
     margin: 0;
-}
-
-body, html {
     scroll-padding-top: 130px; /* adjust the pixel amount here for your top navigation bar height */
 }
 
 main {
     padding-inline: 10%;
+    padding-bottom: 30px;
 }
 
 .basic-container {
@@ -96,7 +94,68 @@ button {
     right: 0;
 }
 
+@media screen and (max-width: 880px) {
+    main {
+        padding-inline: 6%;
+    }
+
+    .basic-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .center-vertical {
+        width: 100%;
+        text-align: center;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 5.8vw;
+        font-family: Poppins;
+        line-height: 20px;
+    }
+    
+    h2 {
+        font-size: 5.3vw;
+        font-weight: 600;
+        font-family: Poppins;
+    }
+    
+    h3 {
+        font-size: 4.8vw;
+        font-weight: normal;
+    }
+    
+    h4 {
+        font-size: 3.5vw;
+        line-height: 2px;
+        margin-bottom: 20px;
+    }
+    
+    h3, p {
+        font-family: Bitter;
+    }
+    
+    p {
+        text-align: justify;
+    }
+    
+    .section-title {
+        margin-bottom: 50px;
+    }
+    
+    section:not(:first-of-type) {
+        margin-top: 120px;
+    }
+}
+
 /**HEADER/NAV*****************************************/  
+header {
+    z-index: 9999;
+}
+
 a {
     text-decoration: none;
 }
@@ -160,6 +219,39 @@ li {
     width: 100%;
 }
 
+.hamburger {
+    display: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+}
+
+@media screen and (max-width: 880px) { 
+    .hamburger {
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .hamburger #closeHam {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 58px;
+        background-color: rgb(245, 245, 245);
+        width: 100%;
+        height: calc(100vh - 58px);
+        padding-top: 60px;
+        gap: 10vh;
+        margin-top: 40px;
+    }
+}
+
 /**HERO***********************************************/
 #profile_img {
     width: 35%;
@@ -173,13 +265,46 @@ li {
     height: 9%;
 }
 
-a:not(:first-child):not(:last-child) {
-    padding-inline: 10%;
-}
-
 #hero {
     margin-top: 180px;
     margin-bottom: 180px;
+}
+
+@media screen and (max-width: 880px) {
+    .hero-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #profile_img {
+        margin-bottom: 30px;
+        width: 70%;
+        height: 70%;
+        border-radius: 50%;
+        box-shadow: 10px 5px 5px rgb(252,183,194);
+    }
+
+    .hero-icons {
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+
+    .icons {
+        width: 40px;
+        height: 40px;
+        margin-inline: 10px;
+    }
+
+    #hero {
+        margin-top: 140px;
+        margin-bottom: 180px;
+    }
+
+    #welcome-txt {
+        text-align: center;
+    }
 }
 
 /**ABOUT***********************************************/
@@ -189,6 +314,19 @@ a:not(:first-child):not(:last-child) {
 
 #about_container {
     padding: 25px 50px;
+}
+
+@media screen and (max-width: 880px) {
+    #about_txt {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    
+    #about_container {
+        display: flex;
+        text-align: center;
+        padding: 0;
+    }
 }
 
 /**PROJECT***********************************************/
@@ -232,6 +370,54 @@ a:not(:first-child):not(:last-child) {
 .learn-more {
     text-align: center;
     margin-top: 25px;
+}
+
+@media screen and (max-width: 880px) {
+    .project {
+        margin-bottom: 80px;
+        padding: 20px;
+        background-color: rgb(245, 245, 245);
+        box-shadow: 10px 5px 5px rgb(252,183,194);
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .project-img {
+        margin-left: 0;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-text {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .project-skills {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .skill {
+        display: flex;
+        align-items: center;
+        margin-right: 3.5vw;
+    }
+    
+    .skill-name {
+        margin-left: 1.3vw;
+    }
+    
+    .skill-img {
+        height: 3.5vw;
+    }
+    
+    .learn-more {
+        text-align: center;
+        margin-top: 50px;
+    }
 }
 
 
@@ -286,3 +472,9 @@ input[type=text], select, textarea {
   #contact_form {
     margin-left: 50px;
   }
+
+@media screen and (max-width: 880px) {
+    #contact_form {
+        margin-left: 0;
+    }
+}
