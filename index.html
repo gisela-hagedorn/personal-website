@@ -12,7 +12,7 @@
     </head>
     <body>
         <!--*HEADER*-------------------------------------------------------------------->
-        <header class="sticky">
+        <header class="sticky navigation-header">
             <nav class="navbar">
                 <!-- LOGO -->
                 <div class="logo">
@@ -22,27 +22,31 @@
                 <!-- NAVIGATION MENU -->
                 <ul class="nav-links">
                   <!-- NAVIGATION MENUS -->
-                  <div class="menu">
+                  <div class="menu" id="navigation-items">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                   </div>
                 </ul>
+                <div class="hamburger">
+                    <span id="openHam">&#9776;</span>
+                    <span id="closeHam">&#x2716;</span>
+                </div>
               </nav>
         </header>
         <!--*MAIN*-------------------------------------------------------------------->
         <main>
             <!--*HERO*-------------------------------------------------------------------->
             <section id="hero">
-                <div class="basic-container">
+                <div class="basic-container hero-container">
                     <div class="center-vertical">
                         <h3>Hi! Nice to see you.</h3>
                         <h1>I'm Gisela Hagedorn</h1>
                         <h1>A Software Developer</h1>
-                        <p>Welcome to my portfolio!</p>
+                        <p id="welcome-txt">Welcome to my portfolio!</p>
                         <br>
-                        <div>
+                        <div class="hero-icons">
                             <a href="https://linkedin.com/in/giselahagedorn" target="_blank"><img alt="LinkedIn" src="images/linkedin.png" class="icons"></a>
                             <a href="https://github.com/ghagedo" target="_blank"><img alt="Github" src="images/github.png" class="icons"></a>
                             <a href="" target="_blank"><img alt="Resume" src="images/resume.png" class="icons"></a>
