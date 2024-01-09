@@ -9,27 +9,46 @@ body {
 }
 
 .center-vertical {
-    margin: auto;
+    margin-block: auto;
     width: 50%;
 }
 
 h1 {
-    font-size: 4vw;
+    font-size: 3.5vw;
     font-family: Poppins;
     line-height: 30px;
 }
 
 h2 {
-    font-size: 3.6vw;
+    font-size: 3.1vw;
+    font-weight: 600;
+    font-family: Poppins;
 }
 
 h3 {
-    font-size: 3.1vw;
+    font-size: 2.4vw;
     font-weight: normal;
 }
 
-h2, h3, p {
+h3, p {
     font-family: Bitter;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+section:not(:first-of-type) {
+    margin-top: 100px;
+}
+
+button {
+    padding: 15px;
+    width: fit-content;
+    background-color: rgb(252,183,194);
+    border-radius: 50px;
+    border-style: none;
+    font-family: Poppins;
 }
 
 
@@ -48,4 +67,49 @@ h2, h3, p {
 
 a:not(:first-child):not(:last-child) {
     padding-inline: 10%;
+}
+
+/**ABOUT***********************************************/
+#about_txt {
+    margin-left: 10vw;
+}
+
+
+/**PROJECT***********************************************/
+.project {
+    margin-bottom: 80px;
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 10px 5px 5px rgb(252,183,194);
+    border-radius: 50px;
+}
+
+.project-img {
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-skills {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-right: 3.5vw;
+}
+
+.skill-name {
+    margin-left: 1.3vw;
+}
+
+.skill-img {
+    height: 3.5vw;
+}
+
+.learn-more {
+    text-align: center;
+    margin-top: 25px;
 }
