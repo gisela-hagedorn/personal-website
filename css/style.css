@@ -30,6 +30,12 @@ h3 {
     font-weight: normal;
 }
 
+h4 {
+    font-size: 1.3vw;
+    line-height: 2px;
+    margin-bottom: 50px;
+}
+
 h3, p {
     font-family: Bitter;
 }
@@ -100,11 +106,14 @@ a:not(:first-child):not(:last-child) {
     margin-left: 10vw;
 }
 
+#about_container {
+    padding: 25px 50px;
+}
 
 /**PROJECT***********************************************/
 .project {
     margin-bottom: 80px;
-    padding: 25px;
+    padding: 25px 50px;
     background-color: rgb(245, 245, 245);
     box-shadow: 10px 5px 5px rgb(252,183,194);
     border-radius: 50px;
@@ -114,6 +123,10 @@ a:not(:first-child):not(:last-child) {
     margin-left: 10vw;
     display: flex;
     flex-direction: column;
+}
+
+.project-text {
+    margin-top: 50px;
 }
 
 .project-skills {
